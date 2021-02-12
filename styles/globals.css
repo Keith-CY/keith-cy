@@ -1,16 +1,17 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import './tailwind.presets.css';
+
+:root {
+  --primary-color: rgb(33, 44, 61);
+  --header-height: 69px;
+}
+
+main {
+  @apply max-w-7xl m-auto mb-0;
+}
+* {
+  @apply tracking-wide box-border outline-none cursor-default;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+  @apply underline cursor-pointer;
 }
