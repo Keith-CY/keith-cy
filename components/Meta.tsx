@@ -15,6 +15,7 @@ const Meta = () => {
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta name="description" content={`${BLOG_NAME}'s Blog`} />
+      <link rel="stylesheet" href="//at.alicdn.com/t/font_2374617_b6qoenmls44.css" />
     </Head>
   )
 }

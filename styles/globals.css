@@ -1,5 +1,9 @@
 @import './tailwind.presets.css';
 
+html {
+  background-color: rgba(245, 249, 238);
+}
+
 main {
   @apply max-w-7xl m-auto mb-0;
 }
