@@ -1,15 +1,14 @@
 @import './tailwind.presets.css';
 
-:root {
-  --primary-color: rgb(33, 44, 61);
-  --header-height: 69px;
-}
-
 main {
   @apply max-w-7xl m-auto mb-0;
 }
 * {
   @apply tracking-wide box-border outline-none cursor-default;
+}
+
+*::selection {
+  @apply bg-gray-800 text-white;
 }
 
 a {
