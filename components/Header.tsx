@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { BLOG_NAME } from 'lib/constants'
 export type Navs = Array<Record<'label' | 'link', string>>
 
-const Header = ({navs = []}: {navs: Navs}) => {
+const Header = ({ navs = [] }: { navs: Navs }) => {
   return (
     <div className="flex font-bold content-between mb-20 mx-20 mt-8">
       <h2 className="text-2xl md:text-4xl md:tracking-tighter flex-grow">

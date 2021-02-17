@@ -1,5 +1,5 @@
 import fs from 'fs'
-import {join} from 'path'
+import { join } from 'path'
 import Link from 'next/link'
 import Head from 'components/Head'
 import Layout from 'components/Layout'
@@ -22,7 +22,11 @@ const Index = ({ postList, navs }: { postList: Array<Post>; navs: Navs }) => {
         </section>
         {postList.map((post, idx) => (
           <section
-            className={idx === HERO_POST_INDEX ? 'flex flex-col p-5 row-span-2 col-span-2' : 'flex flex-col p-5 hover:shadow-xl transition-shadow duration-500'}
+            className={
+              idx === HERO_POST_INDEX
+                ? 'flex flex-col p-5 row-span-2 col-span-2'
+                : 'flex flex-col p-5 hover:shadow-xl transition-shadow duration-500'
+            }
           >
             <img src={post.coverImage} alt={post.title} />
             <Link key={post.slug} href={`posts/${post.slug}`}>

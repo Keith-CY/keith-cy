@@ -3,6 +3,7 @@ import Link from 'next/link'
 const CoverImage = ({ title, src, slug = '' }: Partial<Record<'title' | 'src' | 'slug', string>>) => {
   const image = (
     <img
+      loading="lazy"
       src={src}
       alt={`Cover Image for ${title}`}
       className={slug ? 'shadow-small hover:shadow-medium transition-shadow duration-200' : 'shadow-small'}

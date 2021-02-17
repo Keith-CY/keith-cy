@@ -10,13 +10,7 @@ type PostPreviewProps = {
   slug: string
 }
 
-const PostPreview = ({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  slug,
-}: PostPreviewProps) => {
+const PostPreview = ({ title, coverImage, date, excerpt, slug }: PostPreviewProps) => {
   return (
     <div>
       <div className="mb-5">
