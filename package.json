@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier -w --ignore-unknown pages/**/* components/**/* styles/**/*"
+    "format": "prettier -w --ignore-unknown pages/**/* components/**/* styles/**/*",
+    "new:post": "node ./scripts/new_post.js"
   },
   "husky": {
     "hooks": {
