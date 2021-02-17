@@ -1,3 +1,5 @@
+import fs from 'fs'
+import {join} from 'path'
 import Link from 'next/link'
 import Head from 'components/Head'
 import Layout from 'components/Layout'
@@ -6,10 +8,11 @@ import { Post } from 'types'
 import { Navs } from 'components/Header'
 import Profile from 'components/Profile'
 import DateFormatter from 'components/DateFormatter'
+import { generateRss } from 'lib/rss'
 
 const HERO_POST_INDEX = 0
 
-const Index = ({ allPosts, navs }: { allPosts: Array<Post>; navs: Navs }) => {
+const Index = ({ postList, navs }: { postList: Array<Post>; navs: Navs }) => {
   return (
     <Layout navs={navs}>
       <Head />
@@ -17,7 +20,7 @@ const Index = ({ allPosts, navs }: { allPosts: Array<Post>; navs: Navs }) => {
         <section className="hidden lg:block">
           <Profile />
         </section>
-        {allPosts.map((post, idx) => (
+        {postList.map((post, idx) => (
           <section
             className={idx === HERO_POST_INDEX ? 'flex flex-col p-5 row-span-2 col-span-2' : 'flex flex-col p-5 hover:shadow-xl transition-shadow duration-500'}
           >
@@ -36,16 +39,25 @@ const Index = ({ allPosts, navs }: { allPosts: Array<Post>; navs: Navs }) => {
   )
 }
 
+const buildRssFeed = async (allPosts: Array<Post>) => {
+  const rss = await generateRss(allPosts)
+  fs.writeFileSync(join(process.cwd(), 'public', 'rss.xml'), rss)
+}
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts(['title', 'date', 'slug', 'coverImage', 'excerpt']).slice(0, 6)
+  const allPosts = getAllPosts(['title', 'date', 'slug', 'coverImage', 'excerpt'])
+
+  await buildRssFeed(allPosts)
+
+  const postList = allPosts.slice(0, 6)
   const series = getSeries()
   return {
     props: {
-      allPosts,
+      postList,
       navs: series
         .sort((s1, s2) => s1.index - s2.index)
         .map(serie => ({ label: serie.title, link: `/series/${serie.serie}` })),
     },
   }
 }
+
 export default Index
