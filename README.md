@@ -6,7 +6,7 @@
 
 ### Fields
 
-> Metaverse = Blockchain + XR
+> Metaverse = Blockchain + XR + Connected Universes
 
 ### Some Tools I Use
 
