@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?center=true&lines=Fly+to+the+Web+3.0" alt="">
+  <img src="https://i.imgur.com/flDIMxk.png" alt="Nervosnet" />
 </p>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="divider">
 
 ### Fields
 
