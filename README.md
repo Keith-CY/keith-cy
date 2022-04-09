@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/flDIMxk.png" alt="Nervosnet" />
+  <img src="https://i.imgur.com/MX2Wu9H.png" alt="Nervosnet" />
 </p>
 
 ### Fields
