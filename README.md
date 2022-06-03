@@ -84,4 +84,5 @@
 </table>
 
 ### My DID
+ENS: [magickbase.eth](https://app.ens.domains/name/magickbase.eth/details)
 DAS: [unblock.bit](https://unblock.bit.host/)
