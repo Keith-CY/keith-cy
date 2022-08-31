@@ -61,6 +61,7 @@
   <img alt="Tmux" src="https://img.shields.io/badge/-Tmux-1bb91f?style=flat-square&logo=tmux&logoColor=white" />
   <img alt="Iterm2" src="https://img.shields.io/badge/-Iterm2-0ce927?style=flat-square&logo=iterm2&logoColor=white" />
   <img alt="oh-my-zsh" src="https://img.shields.io/badge/-oh_my_zsh-c5d928?style=flat-square&logo=oh-my-zsh&logoColor=white" />
+  <img alt="neovim" src="https://img.shields.io/badge/neovim-0b151b?style=flat-square&logo=neovim&logoColor=8fff6d" />
 </p>
 
 ### My Activities
