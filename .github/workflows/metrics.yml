@@ -6,8 +6,14 @@ on:
   workflow_dispatch:
   # Run workflow when pushing on main
   push: { branches: ['main'] }
+
+# Prevent overlapping runs from fighting over the same output files (GitHub API "sha does not match" errors).
+concurrency:
+  group: metrics-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   metrics-main:
+    timeout-minutes: 20
     runs-on: ubuntu-latest
     environment:
       name: production
@@ -28,6 +34,7 @@ jobs:
           repositories_affiliations: owner, collaborator, organization_member
 
   metrics-community:
+    timeout-minutes: 20
     runs-on: ubuntu-latest
     environment:
       name: production
@@ -52,6 +59,7 @@ jobs:
           plugin_discussions_categories_limit: 8
 
   metrics-lang-notable:
+    timeout-minutes: 20
     runs-on: ubuntu-latest
     environment:
       name: production
