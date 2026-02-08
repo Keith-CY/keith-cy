@@ -16,7 +16,8 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          # Prefer the built-in GITHUB_TOKEN to avoid managing a long-lived PAT in repo secrets.
+          token: ${{ github.token }}
           user: Keith-CY
           base: activity, community
           filename: metrics-main.svg
@@ -35,7 +36,8 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          # Prefer the built-in GITHUB_TOKEN to avoid managing a long-lived PAT in repo secrets.
+          token: ${{ github.token }}
           user: Keith-CY
           base: ''
           filename: metrics-community.svg
@@ -58,7 +60,8 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          # Prefer the built-in GITHUB_TOKEN to avoid managing a long-lived PAT in repo secrets.
+          token: ${{ github.token }}
           user: Keith-CY
           base: metadata
           filename: metrics-lang-notable.svg
