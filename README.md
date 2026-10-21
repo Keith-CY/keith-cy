@@ -20,17 +20,14 @@
 
 ## Now / 近期在做
 
-**AI agents / AI Agent**
+**Lapla SI**, applied AI lab · [lapla.si](https://lapla.si)
 
-- [idx.md](https://idx.md) ([repo](https://github.com/Keith-CY/idx.md)) - Markdown registry for AI agent libraries (TypeScript). Updated 2026-02-08.
-- [my-crazy-skills](https://github.com/Keith-CY/my-crazy-skills) - A curated skill arsenal for AI agents (TypeScript). Updated 2026-02-08.
-- [owliabot/owliabot](https://github.com/owliabot/owliabot) - Self-hosted AI agent for crypto (TypeScript). Updated 2026-02-08.
-
-**Web3 / Web3**
-
-- [molecule-javascript](https://github.com/Keith-CY/molecule-javascript) - A JavaScript/TypeScript take on Molecule-style data structures. Updated 2026-02-03.
-- [Neuron (fork)](https://github.com/Keith-CY/neuron) - Nervos CKB wallet. Updated 2026-01-29.
-- [ckb-enhanced](https://github.com/Keith-CY/ckb-enhanced) - CKB-related experiment/tooling. Updated 2026-01-17.
+- [gua](https://huggingface.co/LaplAI/gua) - our Mac computer-use model. / 自研的 Mac 电脑操作模型。
+- [sketchbook-style](https://github.com/Keith-CY/sketchbook-style) - Claude Code skill: any object as an industrial-design sketchbook page, open image models, no API key. / 把任何物件画成工业设计手稿。
+- MCP servers: [laplace-mini-world-mcp](https://github.com/Keith-CY/laplace-mini-world-mcp) (3D science models in chat) · [meshmend-mcp](https://github.com/Keith-CY/meshmend-mcp) (STL/3MF check and repair) · [formquote-mcp](https://github.com/Keith-CY/formquote-mcp) (licence and price lookup).
+- [melix](https://github.com/Keith-CY/melix) - local-first AI runtime for Apple Silicon. / 本地优先的 Apple Silicon AI 运行时。
+- [Laplace's Mini World](https://world.lapla.si) - free interactive 3D science models, zh + en. / 免费的交互式 3D 科学模型。
+- [言の葉 Kotonoha](https://japaneseskills.com) - Japanese study site for JLPT learners. / 日语学习站。
 
 ## Toolbox / 常用技术
 
